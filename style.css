@@ -7,7 +7,7 @@
     --primary-color: #5C4033;
     --secondary-color: #C67C46;
     --text-color: #362C28;
-    --background-color: #f9f7f4; /* A soft off-white for a warm feel */
+    --background-color: #faf4ec; /* A soft off-white for a warm feel */
     --light-brown: #a0816c;
 }
 
@@ -26,6 +26,24 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     line-height: 1.6;
+    /* This creates the main content stacking context and is necessary for z-index to work */
+    position: relative;
+    z-index: 1;
+}
+
+/* This new pseudo-element adds the background pattern */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-vector/dark-brown-abstract-background-with-wavy-patterns-organic-flowing-lines-earthy-tones_1211019-1834.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.22; /* Adjust this value (0.1 to 0.2 is a good range) */
+    z-index: -1; /* This is crucial: it places the background element behind everything else */
 }
 
 h1, h2, h3 {
@@ -150,7 +168,8 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    /* Use a semi-transparent color so the body pattern can show through */
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .hero-content {
@@ -192,6 +211,10 @@ a:hover {
  */
 .about-section {
     padding: 5rem 0;
+    /* These two properties are crucial for making this section appear above the body background */
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
 }
 
 .about-section .container {
@@ -237,7 +260,7 @@ a:hover {
 }
 
 .menu-card {
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -274,6 +297,10 @@ a:hover {
  */
 .contact-section {
     padding: 5rem 0;
+    /* These two properties are crucial for making this section appear above the body background */
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 1;
 }
 
 .contact-intro {
