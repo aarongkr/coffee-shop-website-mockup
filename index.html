@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timber and Brew</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/3yx2qg1z/logo-Photoroom.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">Timber and Brew</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Our Menu</a></li>
+                    <li><a href="#contact" class="nav-link">Visit Us</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-headline">The Rustic Heart of Your Daily Ritual</h1>
+                <p class="hero-subheading">Discover handcrafted coffee and a welcoming space where every cup tells a story.</p>
+                <a href="#menu" class="cta-button">Savor Our Menu</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="about-text">Timber and Brew was born from a passion for quality coffee and a love for simple, authentic experiences. We believe that a great cup of coffee should be a moment to slow down and connect. We roast our beans in small batches to ensure the freshest flavor and source them from partners who share our commitment to sustainability and fair practices.</p>
+                </div>
+                <div class="about-image-container">
+                    <img src="https://images.stockcake.com/public/0/6/4/064a2377-303f-4443-bbec-c20bb784fcc7_large/reading-in-cafe-stockcake.jpg" alt="A person reading a book in a cozy cafe corner" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2 class="section-title">The Menu</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="https://thumbs.dreamstime.com/b/latte-art-coffee-beans-rustic-cup-isolated-white-background-png-closeup-creamy-intricate-heartshaped-presented-379621642.jpg" alt="A cup of dark roast coffee" class="menu-item-image">
+                        <div class="menu-card-content">
+                            <h3 class="menu-item-name">The Lumberjack Blend</h3>
+                            <p class="menu-item-description">Our signature dark roast, with rich notes of dark chocolate and toasted nuts. Bold, smooth, and perfect for starting the day.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://thumbs.dreamstime.com/b/pour-over-coffee-process-making-43050014.jpg" alt="Pour-over coffee being brewed" class="menu-item-image">
+                        <div class="menu-card-content">
+                            <h3 class="menu-item-name">Seasonal Single-Origin Pour-Over</h3>
+                            <p class="menu-item-description">A carefully curated selection of single-origin beans, prepared as a pour-over to highlight unique and delicate flavor notes. Ask our baristas for today's offering.</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://media.istockphoto.com/id/1334673836/photo/various-kinds-of-breadstuff-in-the-rustic-basket-isolated-on-white.jpg?s=612x612&w=0&k=20&c=2Dxm9qGbsyFFxskBYhiOouud_oSECc9OgbRjAlj8CYY=" alt="Assortment of pastries" class="menu-item-image">
+                        <div class="menu-card-content">
+                            <h3 class="menu-item-name">Artisan Pastries</h3>
+                            <p class="menu-item-description">Locally baked pastries and treats, including flaky croissants, rustic muffins, and seasonal fruit tarts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="contact-intro">We'd love to see you! Come and find your new favorite spot.</p>
+                <div class="contact-details-and-form">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:aaronrazey@outlook.com">hello@timberandbrew.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:07515028812">07515028812</a></p>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook logo" class="social-icon"></a>
+                <a href="#" aria-label="Github"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" alt="Github logo" class="social-icon"></a>
+            </div>
+            <p class="copyright">© 2025 Timber and Brew. All rights reserved. This is a ficticious company. Any similarities to a real business was unintentional</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
